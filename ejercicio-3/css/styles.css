@@ -1,0 +1,43 @@
+.padre{
+
+    width: 80%;
+    height: 500px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row; 
+    /* column */
+    flex-wrap: wrap;
+    /* eje principal */
+    justify-content: center ; 
+    /* eje secundario */
+    align-items: center;
+
+    /* agrupa los elelemntos en el centro, propiedad solo aplica si hay mas de una fila o columna */
+    align-content: center;
+}
+
+.hijo , .hijo2{
+    width: 120px;
+    height: 80px;
+    background-color: pink;
+    margin: 5px;
+}
+
+.padre2 {
+    margin-top: 10px;
+    width: 80%;
+    height: 300px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:start;
+    justify-content: space-between;
+}
+
+.menu{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}

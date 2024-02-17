@@ -1,0 +1,25 @@
+ /* selectores */
+
+ /* selector de etiquetas  */
+ header{
+    color: coral;
+    font-size: 30px;
+ }
+ p{
+    color: blue;
+ }
+
+ /* selectores de clases  */
+ .section_blue{
+    width: 400px;
+    height: 200px;
+    border: 1px dashed black;
+ }
+
+#pepino{
+    width: 200px;
+} 
+#section_green{
+    height: 100px;
+    background-color: green;
+}

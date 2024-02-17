@@ -1,0 +1,39 @@
+.logo{
+    width: 100px;
+}
+.header{
+    background-color: blue;display: flex;
+    justify-content: space-around;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    gap:10px;
+}
+nav{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.section_blue{
+    background-color: blue;
+    height: 200px;
+    background-image: url("../image/Discord-logo.png");
+    background-size: 200px 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.title{
+    margin: 0;
+}
