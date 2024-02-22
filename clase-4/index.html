@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1>Titulo</h1>
+    <ul>
+      <li><a href="https://regexr.com/3bfsi"> Link1</a></li>
+      <li><a href="contacto.html"> Link2</a></li>
+      <li><a href="#conclusion"> Link3</a></li>
+    </ul>
+    <form method="post">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label for="inputName"> Nombre: </label>
+        <input
+          type="text"
+          name="name"
+          id="inputName"
+          placeholder="Maricarmen Ruiz"
+          required
+          maxlength="12"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Campos de selección</legend>
+        <label for="country">Pais</label>
+        <select name="country" id="country" required>
+          <option value="">Seleccione una opcion</option>
+          <option value="ES">España</option>
+          <option value="FR">Francia</option>
+          <option value="PT">Portugal</option>
+        </select>
+
+        <div>
+          <label>
+            ¿Tiene mascotas?
+            <input type="radio" name="pets" id="petYes" value="si" />
+            <label for="petYes" class="labelRadio cat">Si</label>
+            <input type="radio" name="pets" id="petNo" value="no" />
+            <label for="petNo" class="labelRadio">No</label>
+          </label>
+        </div>
+
+        <label> ¿Qué haces en tu tiempo libre?</label> <br />
+        <input type="checkbox" name="ac" id="" value="01" /> Ver tv <br />
+        <input type="checkbox" name="ac" id="" value="02" /> Estudiar HTML-CSS
+        <br />
+        <input type="checkbox" name="ac" id="" value="03" /> Ir al gym <br />
+        <input type="checkbox" name="ac" id="" value="04" /> comer helados
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Otros campos</legend>
+
+        <label for=""> Email</label>
+        <input type="email" placeholder="tuemail@ejemplo.com" /> <br />
+
+        <textarea name="" id="" cols="10" rows="5" required></textarea>
+        <br />
+        <label for="">Indica nombre de usuario</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="pepino21"
+          required
+          title="letras y numeros tamaño minimo 8 y max 12"
+          pattern="[a-zA-Z0-9]{8,12}"
+        />
+        <input
+          type="password"
+          name=""
+          id=""
+          placeholder="contraseña"
+          pattern="[a-zA-Z0-9]{8,12}"
+          title="letras y numeros tamaño minimo 8 y max 12"
+        />
+      </fieldset>
+
+      <input type="submit" value="enviar" class="btn" />
+    </form>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id velit</p>
+    <p id="conclusion" class="estilo">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id velit
+    </p>
+  </body>
+</html>

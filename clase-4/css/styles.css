@@ -1,0 +1,37 @@
+.btn{
+    display: block;
+    background-color: beige;
+    border: 1px solid grey;
+}
+.labelRadio{
+    color: green;
+    font-weight: bold;
+}
+.cat{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/gato.jpg");
+    background-size:20px;
+}
+input[type="radio"]{
+    margin-left: 100px;
+}
+input[type="text"]{
+    background-color: grey;
+    color: white;
+}
+/* pseudoclases*/
+input:invalid{
+   border: 2px solid red;
+}
+.btn:hover{
+    background-color: pink;
+}
+/* pseudoelementos*/
+input::placeholder{
+    color:blue;
+}
+p::first-letter{
+    color:red
+}
