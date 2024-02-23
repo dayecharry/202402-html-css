@@ -1,0 +1,70 @@
+/*  hoja de reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* maquetacion mobile first*/
+header {
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+main {
+    background-color: cadetblue;
+    height: 100vh;
+}
+
+.menu {
+    display: none;
+}
+
+.contact {
+    display: none;
+}
+
+.services{
+    margin: 20px;
+    border-radius: 5px;
+    background-color: beige;
+    /* primero dos valores grosor de la sombre en el eje x  e y */
+    box-shadow: 10px 10px 5px grey ;
+}
+
+
+
+/* <768  >768 >1024  >2000*/
+@media screen and (min-width:500px) {
+    .contact {
+        display: inline-block;
+    }
+    main {
+        background-color: pink;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1024px){
+    main{
+        background: linear-gradient(white, black);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .title_menu {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        list-style: none;
+        gap:10px;
+    }
+    .container_services{
+        display: flex;
+    }
+}
+/* all --> tv, print, screen*/
+@media all and (min-width:1024px){
+
+}
