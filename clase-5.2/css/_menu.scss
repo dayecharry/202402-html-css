@@ -1,0 +1,50 @@
+// comentario
+/*bloque de comentario */
+.menu {
+    background-color: lightcoral;
+    height: 50px;
+
+    &_hamb{
+        width: 40px;
+        @media all and (min-width:780px) {
+            display: none;
+        }
+    }
+    &_ul{
+        display: none;
+        @media all and (min-width:780px){
+            display: flex;
+            list-style: none;
+                //li hijo es menu_ul 
+                //composicion del seleccion .menu_ul-link
+             &-link {
+                    padding: 10px;
+                    text-decoration: none;
+                    color: $color_text;
+            }
+            
+            & li {
+                    border: 1px solid black;
+            }
+        }
+    }
+/*
+    &_ul {
+        display: flex;
+        list-style: none;
+        //li hijo es menu_ul 
+
+        //composicion del seleccion .menu_ul-link
+        &-link {
+            padding: 10px;
+            text-decoration: none;
+            color: $color_text;
+        }
+
+        
+        & li {
+            border: 1px solid black;
+        }
+    }
+*/
+}

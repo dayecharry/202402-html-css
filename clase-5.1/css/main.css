@@ -1,0 +1,43 @@
+p{
+    font-size: 30px;
+}
+
+.paragraph{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+.secundary{
+    color: grey;
+}
+
+/* 
+1.-  estilos en linea (HTML)
+2.-  ID
+3.- clases, atributos, pseudoclases
+4.- etiquetas
+5.- pseudoelementos
+*/
+.menu{
+    font-size: 30px;
+}
+/* selecciona un .menu que es hijo de .navbar_ppa */ 
+.navbar_ppal .menu{
+    color: red
+}
+/* selecciona un elemento que tiene la clase .paragraph y tambien la clase .secundary */
+.paragraph.secundary{
+    background-color: red;
+}
+/* hijo de .navbar_ppal que tenga la clase .boton*/
+.navbar_ppal > .boton{
+    background-color: blue;
+}
+/* + es el elemento adyacente, justo al lado  */ 
+.navbar_ppal  + .menu{
+    color:green;
+}
+/* ~ se usa para seleccionar hermanos a continuación de un elemento indicado */ 
+.navbar_ppal .menu ~ .dos{
+    color :yellow
+}
