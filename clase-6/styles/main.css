@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgba(255, 192, 203, 0.7);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* position: fixed; // rompe con el flujo del HTML
+   width:100%;*/
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.header_btn {
+  background-color: beige;
+  padding: 5px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.container {
+  background-image: url("https://www.papelpintado.com/media/catalog/product/cache/765175cf1e0a4cff0292d295081d4aa3/w/0/w05096-small.jpg");
+  padding: 20px;
+  background-color: bisque;
+  height: 120vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container_sectionBlue {
+  background-color: aqua;
+  position: relative;
+}
+.container_sectionBlue-title {
+  color: yellow;
+  background-color: red;
+  border: 1px solid darkred;
+}
+.container_sectionBlue-h3 {
+  width: 20px;
+  text-align: center;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+  line-height: 20px;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  z-index: 500;
+}
+.container_sectionBlue div {
+  background-color: blue;
+  color: white;
+  font-family: Arial;
+  font-size: 18px;
+}
+.container_sectionYellow {
+  background-color: purple;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: yellow;
+  font-family: Arial;
+  font-size: 25px;
+}
+
+.cookies {
+  background-color: rgba(52, 45, 46, 0.732);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+}
+.cookies div {
+  width: 50%;
+  background-color: white;
+}
+
+.footer_chat {
+  width: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 50px;
+  z-index: 100;
+}/*# sourceMappingURL=main.css.map */

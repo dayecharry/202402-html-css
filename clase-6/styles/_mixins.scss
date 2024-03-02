@@ -1,0 +1,14 @@
+@mixin displayElementCenter () {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin backgraoundBorder (){
+    background-color: red;
+    border: 1px solid darkred;
+}
+@mixin colorFonTFamily($colorText, $font, $size){
+    color: $colorText;
+    font-family: $font;
+    font-size:  $size;
+}
