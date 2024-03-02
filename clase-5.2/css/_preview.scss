@@ -1,0 +1,42 @@
+.preview{
+
+    padding: 10px;
+    border: 1px solid grey;
+
+    @media all and (min-width:780px) {
+        width: 300px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    &_header{
+        background-color: black;
+        height: 15px;
+        display: flex;
+        gap: 3px;
+        align-items: center;
+
+        & div{
+            margin-left: 3px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        &-red{
+            background-color: red;
+        }
+        &-yellow {
+            background-color: yellow;
+        }
+        &-green {
+            background-color: green;
+        }
+    }
+    &_container{
+        display: flex;
+        gap: 10px;
+    }
+    &_title{
+        color: $color_text;
+        background-color: $pepino;
+    }
+}
